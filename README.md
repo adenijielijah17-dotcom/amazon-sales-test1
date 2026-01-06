@@ -67,11 +67,7 @@ Example tasks:
 ## Exploratory Data Analysis (SQL)
 SQL was used to perform structured EDA and answer key analytical questions, such as:
 - Category-wise average ratings
-- Products with the highest discounts
-- Top-rated products with significant review counts
-- Relationship between discount percentage and customer ratings
-- Price comparison across categories
-***sq
+ ***sq
 select
 category,
 AVG(discounted_price) AS discount
@@ -80,6 +76,11 @@ group by category
 order by discount desc
 limit 5;
 ***
+- Products with the highest discounts
+- Top-rated products with significant review counts
+- Relationship between discount percentage and customer ratings
+- Price comparison across categories
+
 
 ---
 

@@ -67,15 +67,6 @@ Example tasks:
 ## Exploratory Data Analysis (SQL)
 SQL was used to perform structured EDA and answer key analytical questions, such as:
 - Category-wise average ratings
- ***sq
-select
-category,
-AVG(discounted_price) AS discount
-from amazon
-group by category
-order by discount desc
-limit 5;
-***
 - Products with the highest discounts
 - Top-rated products with significant review counts
 - Relationship between discount percentage and customer ratings
@@ -87,6 +78,15 @@ limit 5;
 ## Business Problems Solved
 This project addresses the following business questions:
 - Which product categories offer the highest average discounts?
+***sq
+- select
+category,
+AVG(discounted_price) AS discount
+from amazon
+group by category
+order by discount desc
+limit 5;
+***
 - Do higher discounts lead to better customer ratings?
 - Which products receive high ratings despite low discounts?
 - What categories generate the most customer engagement based on rating count?

@@ -71,6 +71,15 @@ SQL was used to perform structured EDA and answer key analytical questions, such
 - Top-rated products with significant review counts
 - Relationship between discount percentage and customer ratings
 - Price comparison across categories
+***sq
+select
+category,
+AVG(discounted_price) AS discount
+from amazon
+group by category
+order by discount desc
+limit 5;
+***
 
 ---
 
